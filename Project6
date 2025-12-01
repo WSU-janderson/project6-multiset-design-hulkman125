@@ -49,7 +49,7 @@ parameter will be turned into a potion.
 
 6. UML Diagram / Abstraction Boundary
 										The UML of my multiset called "Bag"
-										![alt text](Bag UML.png)
+										![alt text](BagUML.png)
 
 
 7. Trade-off Analysis
