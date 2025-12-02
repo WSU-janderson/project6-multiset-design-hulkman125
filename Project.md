@@ -50,15 +50,17 @@ parameter will be turned into a potion.
 6. UML Diagram / Abstraction Boundary
 										The UML of my multiset called "Bag"
 			![alt text](BagUML.png)
+   
 
 										The advantages of both Sequences and AVLTrees
 			![alt text](dataChart.png)
+   
 
 										Complexities of Sequences and AVLTrees
 			![alt text](dataChartB.png)
 
 
-7. Trade-off Analysis
+8. Trade-off Analysis
 The data structure I have chosen to use is a sequence and I will be comparing it to a AVL tree. I chose 
 to use a sequence(1) mainly because it is simpler and has more flexibility for its data, as well as its 
 ease of use and accessing its data can be quite efficient especially if it is a priority queue rather 
@@ -74,7 +76,7 @@ to access specific elements. For example, if I wanted to sort my favorite weapon
 of the sequence and I made a method called "pop" that accesses the first object in the sequence, It would 
 not have to go through all the other elements in the sequence when it is already at the front.
 
-8. Alternative Design Sketch
+9. Alternative Design Sketch
 	If I had used the other types of data structures, such as, HashTable or AVLTrees, organizing each item 
 that comes out of my bag might be a bit different than using a sequence. If I chose to use a HashTable 
 each item might be organized in a more unexpected way, Hashtables organize their elements based on a 
@@ -88,7 +90,7 @@ it should be noted that coding a AVL tree if more complicated than a sequence.
 	
 
 
-9. Evaluation Plan
+10. Evaluation Plan
 	If I were to test the data structures of my virtual world game I would hire a beta tester that would 
 test each part of my game and when you are doing certain sections of the game, such as brewing a potion 
 or fighting a medieval dragon, you would need to have access to your items in the bag that are organized 
@@ -98,7 +100,7 @@ would not hesitate changing up and using any one of my other data structures. Ho
 able to sort each element in a specific way that the game player would be happy with, then I truly feel
 that the extensibility and maintainability of my bag is well organized and implemented.
 
-10. Conclusion / Reflection
+11. Conclusion / Reflection
 	My bag would be a strong and effective multiset due to the abstraction(4) of it. In the UML chart 
 of my bag, you would see that the only method that is public is my LootItem method because I want the 
 bad guys in my game to snatch an item from my character and in order to do this, they need access to 
