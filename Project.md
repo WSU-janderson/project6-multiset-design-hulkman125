@@ -1,5 +1,5 @@
-Project 6
-Multiset Design
+														Project 6
+													Multiset Design
 
 1.Introduction
 	In my gamming scenario I will be using a Virtual Reality game headset (like the one you use in Meta Quest) 
