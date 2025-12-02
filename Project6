@@ -51,6 +51,12 @@ parameter will be turned into a potion.
 										The UML of my multiset called "Bag"
 										![alt text](BagUML.png)
 
+										The advantages of both Sequences and AVLTrees
+										![alt text](dataChart.png)
+
+										Complexities of Sequences and AVLTrees
+										![alt text](dataChartB.png)
+
 
 7. Trade-off Analysis
 The data structure I have chosen to use is a sequence and I will be comparing it to a AVL tree. I chose to use a sequence(1)
