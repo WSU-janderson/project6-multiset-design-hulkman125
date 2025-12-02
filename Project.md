@@ -3,7 +3,7 @@
 
 1.Introduction
 
-	In my gamming scenario I will be using a Virtual Reality game headset (like the one you use in Meta Quest) 
+In my gamming scenario I will be using a Virtual Reality game headset (like the one you use in Meta Quest) 
 where I play as a medieval warrior with multiple types of inventory items which will include, but not limited to, 
 a sword,  an ax,  a mace,  a bow and arrow, coins, keys (many of which will have different shapes and colors),  
 maps, potions( each specifically will do different things depending on the potion itself), etc. each item will 
@@ -16,7 +16,7 @@ in the game.
 
 2. Design Philosophy
    
-	In my reality game, the users would be people who would play headsets like Meta quest, and they would be the 
+In my reality game, the users would be people who would play headsets like Meta quest, and they would be the 
 ones using my multiset (or bag). In my multiset (which I’m just going to declare it as "bag" for this scenario) I 
 would have an integer that represents the number of objects in my bag called "SizeOfMultiList" that would be 
 incremented or decremented when you either add or subtract objects from it. To make my multiset more readable and 
@@ -27,7 +27,7 @@ and press the drop button and I can tell it how many of that object I wish to el
 
 3.Core Operations
 
-	A good operation any multiset would support would be "bagRemove(x)" to remove an object in my bag or "bagAdd(x)" 
+A good operation any multiset would support would be "bagRemove(x)" to remove an object in my bag or "bagAdd(x)" 
 to add something to it. Both of these operations use 0(n). Another operation any multiset would use is "bagShuffle()" 
 to randomly reorganize each and every item in my bag. This would require a time complexity of 0(n). The final 
 operation I can think of that a multiset would use is to grab the first object that is on the list such as "bagGrab()", 
@@ -35,7 +35,7 @@ which would have a time complexity of 0(1).
 
 4.Set Operations
 
-	The first operation I would use in my virtual reality game is to label a key item such as a weapon or an 
+The first operation I would use in my virtual reality game is to label a key item such as a weapon or an 
 actual key from any item in my bag that is useful for the game quest. So that way if I press a button on my 
 controller, such as select, I can immediately use that object without having to go to my bag and look for the 
 object, which can be a little time consuming. The time complexity should be 0(n). This would be done b having 
@@ -48,7 +48,7 @@ recursion for this scenario which would most likely make the time complexity for
 
 5. Extension Feature
    
-	The code for the first method I would make is "void activateRegistered()". The code for the second method I made
+The code for the first method I would make is "void activateRegistered()". The code for the second method I made
 would be "Potion BrewPotion(List of Ingredients)" that would return a potion object so all the ingredients in the 
 parameter will be turned into a potion.
 
@@ -89,7 +89,7 @@ not have to go through all the other elements in the sequence when it is already
 
 10. Alternative Design Sketch
     
-	If I had used the other types of data structures, such as, HashTable or AVLTrees, organizing each item 
+If I had used the other types of data structures, such as, HashTable or AVLTrees, organizing each item 
 that comes out of my bag might be a bit different than using a sequence. If I chose to use a HashTable 
 each item might be organized in a more unexpected way, Hashtables organize their elements based on a 
 number system such as integers, but the game programmer might not be able to understand how each object 
@@ -104,7 +104,7 @@ it should be noted that coding a AVL tree if more complicated than a sequence.
 
 12. Evaluation Plan
     
-	If I were to test the data structures of my virtual world game I would hire a beta tester that would 
+If I were to test the data structures of my virtual world game I would hire a beta tester that would 
 test each part of my game and when you are doing certain sections of the game, such as brewing a potion 
 or fighting a medieval dragon, you would need to have access to your items in the bag that are organized 
 using my sequence that sorts each element in a specific order such as how many times I've used them.. If 
@@ -115,7 +115,7 @@ that the extensibility and maintainability of my bag is well organized and imple
 
 14. Conclusion / Reflection
     
-	My bag would be a strong and effective multiset due to the abstraction(4) of it. In the UML chart 
+My bag would be a strong and effective multiset due to the abstraction(4) of it. In the UML chart 
 of my bag, you would see that the only method that is public is my LootItem method because I want the 
 bad guys in my game to snatch an item from my character and in order to do this, they need access to 
 a method in my player's bag class which needs to be a public interphase for it to be possible. However, 
