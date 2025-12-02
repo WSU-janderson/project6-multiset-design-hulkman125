@@ -2,6 +2,7 @@
 													Multiset Design
 
 1.Introduction
+
 	In my gamming scenario I will be using a Virtual Reality game headset (like the one you use in Meta Quest) 
 where I play as a medieval warrior with multiple types of inventory items which will include, but not limited to, 
 a sword,  an ax,  a mace,  a bow and arrow, coins, keys (many of which will have different shapes and colors),  
@@ -14,6 +15,7 @@ avatar could use them to brew potions. My multiset's sole purpose is to store st
 in the game.
 
 2. Design Philosophy
+   
 	In my reality game, the users would be people who would play headsets like Meta quest, and they would be the 
 ones using my multiset (or bag). In my multiset (which I’m just going to declare it as "bag" for this scenario) I 
 would have an integer that represents the number of objects in my bag called "SizeOfMultiList" that would be 
@@ -24,6 +26,7 @@ items of that object specifically are in my bag. If I want to remove it all I ha
 and press the drop button and I can tell it how many of that object I wish to eliminate permanently.
 
 3.Core Operations
+
 	A good operation any multiset would support would be "bagRemove(x)" to remove an object in my bag or "bagAdd(x)" 
 to add something to it. Both of these operations use 0(n). Another operation any multiset would use is "bagShuffle()" 
 to randomly reorganize each and every item in my bag. This would require a time complexity of 0(n). The final 
@@ -31,6 +34,7 @@ operation I can think of that a multiset would use is to grab the first object t
 which would have a time complexity of 0(1).
 
 4.Set Operations
+
 	The first operation I would use in my virtual reality game is to label a key item such as a weapon or an 
 actual key from any item in my bag that is useful for the game quest. So that way if I press a button on my 
 controller, such as select, I can immediately use that object without having to go to my bag and look for the 
@@ -43,11 +47,12 @@ high stats, you would need a potion that would require your stats to be greatly 
 recursion for this scenario which would most likely make the time complexity for this method to be 0(log n). 
 
 5. Extension Feature
+   
 	The code for the first method I would make is "void activateRegistered()". The code for the second method I made
 would be "Potion BrewPotion(List of Ingredients)" that would return a potion object so all the ingredients in the 
 parameter will be turned into a potion.
 
-6. UML Diagram / Abstraction Boundary
+7. UML Diagram / Abstraction Boundary
    
 The UML of my multiset called "Bag"
 			![alt text](BagUML.png)
@@ -66,6 +71,7 @@ Complexities of Sequences and AVLTrees
 
 
 8. Trade-off Analysis
+   
 The data structure I have chosen to use is a sequence and I will be comparing it to a AVL tree. I chose 
 to use a sequence(1) mainly because it is simpler and has more flexibility for its data, as well as its 
 ease of use and accessing its data can be quite efficient especially if it is a priority queue rather 
@@ -81,7 +87,8 @@ to access specific elements. For example, if I wanted to sort my favorite weapon
 of the sequence and I made a method called "pop" that accesses the first object in the sequence, It would 
 not have to go through all the other elements in the sequence when it is already at the front.
 
-9. Alternative Design Sketch
+10. Alternative Design Sketch
+    
 	If I had used the other types of data structures, such as, HashTable or AVLTrees, organizing each item 
 that comes out of my bag might be a bit different than using a sequence. If I chose to use a HashTable 
 each item might be organized in a more unexpected way, Hashtables organize their elements based on a 
@@ -95,7 +102,8 @@ it should be noted that coding a AVL tree if more complicated than a sequence.
 	
 
 
-10. Evaluation Plan
+12. Evaluation Plan
+    
 	If I were to test the data structures of my virtual world game I would hire a beta tester that would 
 test each part of my game and when you are doing certain sections of the game, such as brewing a potion 
 or fighting a medieval dragon, you would need to have access to your items in the bag that are organized 
@@ -105,7 +113,8 @@ would not hesitate changing up and using any one of my other data structures. Ho
 able to sort each element in a specific way that the game player would be happy with, then I truly feel
 that the extensibility and maintainability of my bag is well organized and implemented.
 
-11. Conclusion / Reflection
+14. Conclusion / Reflection
+    
 	My bag would be a strong and effective multiset due to the abstraction(4) of it. In the UML chart 
 of my bag, you would see that the only method that is public is my LootItem method because I want the 
 bad guys in my game to snatch an item from my character and in order to do this, they need access to 
