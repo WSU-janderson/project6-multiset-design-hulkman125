@@ -48,19 +48,19 @@ would be "Potion BrewPotion(List of Ingredients)" that would return a potion obj
 parameter will be turned into a potion.
 
 6. UML Diagram / Abstraction Boundary
-										The UML of my multiset called "Bag"
+The UML of my multiset called "Bag"
 			![alt text](BagUML.png)
 
    
    
 
-										The advantages of both Sequences and AVLTrees
+The advantages of both Sequences and AVLTrees
 			![alt text](dataChart.png)
 
    
    
 
-										Complexities of Sequences and AVLTrees
+Complexities of Sequences and AVLTrees
 			![alt text](dataChartB.png)
 
 
