@@ -50,7 +50,9 @@ recursion for this scenario which would most likely make the time complexity for
 The code for the first method I would make is "void activateRegistered()" which is no dought used to activate the 
 labeled item in my multiset. The code for the second method I made would be "Potion BrewPotion(List of Ingredients)" 
 that would return a potion object so all the ingredients in the parameter ( which will be sorted in a vector) will 
-be turned into a potion.
+be turned into a potion. If I were to add a different variable to my multiset, it would be the number of unique 
+items in my multiset, as in items that are not duplications. This would be an integer variable called 
+"numberOfUniqueItems".
 
 6. UML Diagram / Abstraction Boundary
    
