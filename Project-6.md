@@ -6,7 +6,7 @@
 In my gamming scenario I will be using a Virtual Reality game headset (like the one you use in Meta Quest) 
 where I play as a medieval warrior with multiple types of inventory items which will include, but not limited to, 
 a sword,  an ax,  a mace,  a bow and arrow, coins, keys (many of which will have different shapes and colors),  
-maps, potions( each specifically will do different things depending on the potion itself), etc. each item will 
+maps, potions (each specifically will do different things depending on the potion itself), etc. each item will 
 be sorted in separate types of sequences. For example, the weapons such as the sword, ax, and bow and arrow will 
 all be in a sequence called "Weapons", while the potions, or any magical items with the ability to be used to 
 regenerate lost stamina or increase stats such as Hit points, speed, or attack strength, will be in a sequence 
