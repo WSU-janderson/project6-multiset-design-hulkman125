@@ -21,25 +21,24 @@ ones using my multiset (or bag). In my multiset (which I’m just going to decla
 would have an integer that represents the number of objects in my bag called "SizeOfMultiList" that would be 
 incremented or decremented when you either add or subtract objects from it. To make my multiset more readable and 
 simpler to use, when I want to access the data in my bag I just use my set of sequences that will be used to help 
-organize my objects in them based on how many times I've used them, and will reduce duplication and display how many 
-items of that object specifically are in my bag. If I want to remove it all I have to do is select it from the menu 
-and press the drop button and I can tell it how many of that object I wish to eliminate permanently.
+organize my objects in them based on how many times I've used them. If I want to remove it all I have to do is select 
+it from the menu and press the drop button and I can tell it how many of that object I wish to eliminate permanently.
 
 3.Core Operations
 
-A good operation any multiset would support would be "bagRemove(x)" to remove an object in my bag or "bagAdd(x)" 
-to add something to it. Both of these operations use 0(n). Another operation any multiset would use is "bagShuffle()" 
-to randomly reorganize each and every item in my bag. This would require a time complexity of 0(n). The final 
-operation I can think of that a multiset would use is to grab the first object that is on the list such as "bagGrab()", 
-which would have a time complexity of 0(1).
+A good operation any multiset would support would be "bagRemove(x)" to remove an object in my bag based on my "x" parameter 
+or "bagAdd(x)" to add something to it, which is also based on my "x" parameter. Both of these operations use 0(n). Another 
+operation any multiset would use is "bagShuffle()" to randomly reorganize each and every item in my bag. This would require 
+a time complexity of 0(n). The final operation I can think of that a multiset would use is to grab the first object that 
+is on the list such as "bagGrab()", which would have a time complexity of 0(1).
 
 4.Set Operations
 
 The first operation I would use in my virtual reality game is to label a key item such as a weapon or an 
 actual key from any item in my bag that is useful for the game quest. So that way if I press a button on my 
 controller, such as select, I can immediately use that object without having to go to my bag and look for the 
-object, which can be a little time consuming. The time complexity should be 0(n). This would be done b having 
-my program check each individual item until it hits the object that is labels as "REGISTERED".  The second 
+object, which can be a little time consuming. The time complexity should be 0(n). This would be done by having 
+my program check each individual item until it hits the object that is labeled as "REGISTERED".  The second 
 operation I would use is for each of my potion ingredients in the bag. I would make a method that calculates 
 which potion ingredients that is most likely to be used for a given moment in the game. For example, for a dragon 
 boss battle, the computer may be more concerned about you getting burned. Or if you want to battle an enemy with 
@@ -48,9 +47,10 @@ recursion for this scenario which would most likely make the time complexity for
 
 5. Extension Feature
    
-The code for the first method I would make is "void activateRegistered()". The code for the second method I made
-would be "Potion BrewPotion(List of Ingredients)" that would return a potion object so all the ingredients in the 
-parameter will be turned into a potion.
+The code for the first method I would make is "void activateRegistered()" which is no dought used to activate the 
+labeled item in my multiset. The code for the second method I made would be "Potion BrewPotion(List of Ingredients)" 
+that would return a potion object so all the ingredients in the parameter ( which will be sorted in a vector) will 
+be turned into a potion.
 
 6. UML Diagram / Abstraction Boundary
    
@@ -81,11 +81,10 @@ searching(2) making retrieving data more quickly and efficient in most scenarios
 insertion and deletion. However, the disadvantage of using a tree is that it requires a lot of memory to 
 use and if the tree is not balanced it can result in uneven search times. Another disadvantage is its 
 complexity which can be difficult to understand for the person writing the code of my game. That is why 
-I would prefer using a sequence for my game making it more likely to access items in my bag that would 
-be more likely to use if I sort them in a specific and more preferable way making it easier for the player 
-to access specific elements. For example, if I wanted to sort my favorite weapon such as a sword in the front 
-of the sequence and I made a method called "pop" that accesses the first object in the sequence, It would 
-not have to go through all the other elements in the sequence when it is already at the front.
+I would prefer using a sequence for my game making it more simpler for my code writer because I normally 
+value simplicity. If I wanted to go back and degub my code, then fixing any errors should be much simpler 
+then using Hashtables or AVLTrees.
+
 
 8. Alternative Design Sketch
     
@@ -98,7 +97,8 @@ is a bit more predictable and less stressful since all you have to do is look at
 one by one until you find the correct item. Using AVLTrees would probably be better than using HashTables 
 but not better than sequences. Using AVLTrees might organize the items with less predictability especially 
 if you have to constantly balance each item in the tree not knowing exactly how they are organized. Also, 
-it should be noted that coding a AVL tree if more complicated than a sequence. 
+it should be noted that coding a AVL tree if more complicated than a sequence(I would know because the part 
+of coding an AVLTree that was most stressful for me was balancing the tree after every insertion or removal). 
 	
 
 
@@ -107,11 +107,10 @@ it should be noted that coding a AVL tree if more complicated than a sequence.
 If I were to test the data structures of my virtual world game I would hire a beta tester that would 
 test each part of my game and when you are doing certain sections of the game, such as brewing a potion 
 or fighting a medieval dragon, you would need to have access to your items in the bag that are organized 
-using my sequence that sorts each element in a specific order such as how many times I've used them.. If 
-my tester feels that using a sequence is not the best approach to organizing the elements of my bag then I 
-would not hesitate changing up and using any one of my other data structures. However, if my sequence is 
-able to sort each element in a specific way that the game player would be happy with, then I truly feel
-that the extensibility and maintainability of my bag is well organized and implemented.
+using my sequence. If my tester feels that using a sequence is not the best approach to organizing the 
+elements of my bag then I would not hesitate changing up and using any one of my other data structures. 
+However, if both my game tester is truly satisfied with the results then I truly feel that the extensibility 
+and maintainability of my bag is well organized and implemented.
 
 10. Conclusion / Reflection
     
